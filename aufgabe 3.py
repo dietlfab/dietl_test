@@ -1,5 +1,4 @@
 continents = ["Afrika", "Antarktis", "Asien", "Australien und Ozeanien", "Europa", "Nordamerika", "Südamerika"]
-counter = 0
 
 print("Aufgabe 1.1")
 for x in continents:
@@ -18,6 +17,10 @@ for z in myList:
     if z not in continents:
         continue
     print (z)
-    counter = counter +1
+
 print("\nAufgabe 1.4")
-print (counter)
+counter = 0
+for n in continents:
+    if myList.count(n) == True:
+        counter = counter + 1
+print(counter)
